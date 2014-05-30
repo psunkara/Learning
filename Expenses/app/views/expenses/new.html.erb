@@ -1,0 +1,23 @@
+<h1>Manage Expenses</h1>
+
+<%= form_for @expense do |f| %>
+    <p>
+      <%= f.label :amount %><br>
+      <%= f.text_field :amount %>
+    </p>
+
+    <p>
+      <%= f.label :details %><br>
+      <%= f.text_area :details %>
+    </p>
+    <p>
+      <%= f.label :date %><br>
+      <%= f.text_field :dated %>
+    </p>
+
+    <p>
+      <%= f.submit :Submit %>
+    </p>
+<% end %>
+
+<%= link_to 'Back', expenses_path %>

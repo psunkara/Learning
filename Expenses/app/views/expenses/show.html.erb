@@ -1,0 +1,16 @@
+<p>
+  <strong>Amount:</strong>
+  <%= @expense.amount %>
+</p>
+
+<p>
+  <strong>Details:</strong>
+  <%= @expense.details %>
+</p>
+<p>
+  <strong>Dated on:</strong>
+  <%= @expense.dated %>
+</p>
+
+<%= link_to 'Back', expenses_path %>
+| <%= link_to 'Edit', edit_expense_path(@expense) %>
